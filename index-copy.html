@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* =====================================
+ ||||||||||||| elemental ||||||||||||||
+ ===================================== */
+/* container */
+.container {
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+@media (min-width: 768px) {
+   .container {
+      width: 750px;
+   }
+}
+@media (min-width: 992px) {
+   .container {
+      width: 970px;
+   }
+}
+@media (min-width: 1200px) {
+   .container {
+      width: 90%;
+   }
+}
+
+/* ===================================
+|||||||||||||||| font ||||||||||||||||
+==================================== */
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url('../font/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: "Poppins";
+  src: url('../font/Poppins/Poppins-Regular.ttf');
+}
+/* message */
+#message main .pesan {
+    font-family: 'Plus Jakarta Sans';
+    font-style: italic;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: justify;
+}
+/* message header .contact */
+#message header .contact a {
+    font-family: 'Plus Jakarta Sans';
+    font-style: italic;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 111%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+/* message button & message footer button */
+#message main .pesan .button, #message footer .button {
+    font-family: 'Poppins';
+    color: white;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 17.46px;
+    text-align: center;
+}
+#message main .pesan .button{
+    font-size: 15px;
+}
+#message footer .button {
+    text-decoration: none;
+    font-size: 20px;
+}
+/* message footer contact */
+#message footer .contact span {
+    font-family: 'Plus Jakarta Sans';        
+    font-style: italic;
+    font-weight: 200;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+}
+/* benefits */
+#benefit h2 {
+    font-family: 'Plus Jakarta Sans';
+    font-style: italic;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 99.5%;
+    letter-spacing: 0.01em;
+    color: #252525
+}
+#benefit > aside > article > ul > li > h3 {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 77%;
+    margin-top: 0;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    color: #F37E0A;
+}
+#benefit > aside > article > ul > li > p {
+    font-family: 'Plus Jakarta Sans';
+    font-style: italic;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #252525;
+}
+/* benefit responsive */
+@media (max-width:499px) {
+    #benefit h2 {
+        font-size: 1rem;
+    }
+}
+@media (max-width:300px) {
+    #benefit h2 {
+        font-size: 13px;
+    }
+}
+
+/* content.article & hire-talent article & quotation */
+#content .content > article h2, 
+#hire-talent > article > h2,
+#quotation h2 {
+    font-family: 'Plus Jakarta Sans';
+    font-style: italic;
+    font-weight: 200;
+    font-size: 2.6rem;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: #021642;
+}
+#content .content > article p, 
+#hire-talent > article > p,
+#quotation p {
+    font-family: 'Plus Jakarta Sans';
+    font-style: italic;
+    font-weight: 200;
+    font-size: 1rem;
+    line-height: 160%;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    color: #252525;
+}
+/* hire-talent */
+#hire-talent > article > p {
+    margin-right: 1rem;
+}
+#hire-talent > article > h2 {
+    font-size: 3rem;
+}
+/* quotation */
+#quotation h2 {
+    text-align: center;
+}
+#quotation p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+@media (max-width:700px) {
+    #quotation h2 {
+        font-size: 2rem;
+    }
+    #quotation p {
+        font-size: 1rem;
+    }
+}
+
+/* success-story.title */
+#success-story > .title,
+#success-story > .article > article h3,
+#success-story > .article > article p {
+    font-family: 'Plus Jakarta Sans';
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #021642;
+}
+#success-story > .title > h2 {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 50px;
+    line-height: 130%;
+}
+#success-story > .title > p {
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 160%;
+    margin-bottom: 50px;
+}
+#success-story > .article > article h3 {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 25px;
+    line-height: 130%;
+}
+#success-story > .article > article p {
+    font-weight: 200;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 160%;
+    margin-bottom: 50px;
+}
+    /* ====================================
+||||||||||||| message part ||||||||||||
+======================================= */
+/* -------------header---------------- */
+#message header {
+    margin-top: 45px;
+    margin-bottom: 0;
+    /* max-width: 1058px; */
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #0437A5;
+
+    background: #0437A5;
+    border-radius: 20px 20px 0px 0px;
+}
+/* header.logo */
+#message header .logo {
+    height: 40px;
+    margin-top: 10px;
+}
+@media (min-width: 768px) {
+    #message header .logo {
+        width: 20%;
+        margin-top: 10px;
+    }
+    #message header {
+        height: 60px;
+    }
+ }
+ @media (min-width: 992px) {
+    #message header .logo {
+        width: 20%;
+        margin-top: 15px;
+    }
+    #message header {
+        height: 80px;
+    }
+ }
+ @media (min-width: 1200px) {
+    #message header .logo {
+        width: 20%;
+        margin-top: 20px;
+    }
+}
+/* header.contact */
+#message header .contact {
+    height: 100%;
+    position: relative;
+    float: right;
+    display: flex;
+    align-items: center;
+    margin-right: 3%;
+}
+#message header .contact a {
+    margin-right: 1rem;
+}
+#message header .contact img {
+    width: 25px;
+    height: auto;
+    margin-right: 2px;
+}
+@media (max-width: 624px) {
+    #message header .contact a, #message header .contact img {
+       display: none;
+    }
+}
+/* --------------main-------------- */
+#message main {
+    margin-top: 0;
+    /* max-width: 1058px; */
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #000000;
+    border-bottom: none;
+}
+/* main.pesan */
+#message .pesan {
+    padding: 39px;
+}
+@media (max-width: 390px) {
+    #message .pesan {
+       padding: 1rem;
+    }
+}
+/* .pesan link */
+#message .pesan a {
+    text-decoration: none;
+}
+/* .pesan button  */
+#message .pesan .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F37E0A;
+    box-shadow: 5px 5px 20px rgba(243, 126, 10, 0.2);
+    border-radius: 15px;
+    width: 250px;
+    height: 50px;
+    border: none;
+}
+@media (max-width: 325px) {
+    #message .pesan .button {
+        width: 180px;
+    }
+}
+/* --------------footer-------------- */
+#message footer {
+    margin-top: 0;
+    /* max-width: 1058px; */
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 45px;
+    border: 1px solid #000000;
+    border-top: none;
+    border-radius: 0px 0px 40px 40px;
+}
+/* footer .assign */
+#message footer .assign {
+    height: 100%;
+    position: relative;
+    float: right;
+    margin-right: 3%;
+    max-width: 170;
+    max-height: 96;
+}
+#message footer .assign img {
+    width: 100%;
+}
+@media (max-width: 500px) {
+    #message footer .assign {
+        margin-top: 50px;
+        width: 45%;
+        height: auto;
+    }
+}
+/* footer.logo */
+#message footer .logo {
+    /* height: 100%; */
+    position: relative;
+    float: left;
+    margin: 0 0 0 39px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: aliceblue;
+}
+#message footer .logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+@media (max-width: 500px) {
+    #message footer .logo {
+        margin-top: 50px;
+        width: 20%;
+        height: 0;
+        padding-bottom: 20%;
+    }
+}
+@media (max-width: 390px) {
+    #message footer .logo {
+        margin-left: 1rem;
+        margin-top: 50px;
+    }
+}
+/* footer.contact */
+#message footer .contact span {
+    display: inline-block;
+    margin: 0 0 0 39px;
+}
+#message footer > .contact > span:nth-child(2)::before {
+    content: '';
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #000000;
+}
+#message footer .contact div {
+    display: inline-flex;
+    align-items: center;
+}
+#message footer .contact div img {
+    height: 25px;
+}
+#message footer .contact div a {
+    font-size: 12px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+@media (min-width: 500px) {
+    #message footer .contact {
+        max-width: 500px;
+    }
+}
+@media (max-width: 390px) {
+    #message footer .contact {
+        margin-left: 0;
+    }
+    #message footer .contact span {
+        font-size: 0.7rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+}
+/* footer.button */
+#message footer .button-contact {
+    margin-top: 70px;
+    width: 100%;
+    /* background-color:  #0437A5; */
+    height: 10px;
+    padding-bottom: 50px;
+}
+#message footer .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    background:  #0437A5;
+    box-shadow: 5px 5px 20px rgba(243, 126, 10, 0.2);
+    border-radius: 15px;
+    width: 250px;
+    height: 50px;
+    border: none;
+}
+/* =============================================
+||||||||||||||||||| content|||||||||||||||||||||
+================================================ */
+#content {
+    margin-top: 70px;
+    /* max-width: 1058px; */
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: none;
+}
+/* brodcamp */
+#content .broadcamp {
+    width: 100%;
+    padding-bottom: 45%;
+    /* max-width: 1058px; */
+    max-height: 427px;
+    background: url('../img/papan.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+/* content */
+#content .content {
+    width: 100%;
+    /* max-width: 1058px; */
+    margin-top: 40px;
+    display: flex;
+}
+/* content aside */
+#content .content > article {
+    width: 40%;
+}
+#content .content > aside {
+    width: 60%;
+}
+#content .content > aside {
+    display: flex;
+}
+/* content aside.article */
+#content .content > aside > article {
+    width: 50%;
+}
+/* content aside.article list */
+#content .content > aside > article ul {
+    list-style-type: none;
+}
+#content .content > aside > article li {
+    font-family: 'Plus Jakarta Sans';
+    font-style: italic;
+    font-weight: 200;
+    font-size: 1rem;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: #252525;
+}
+#content .content > aside > article li > .plus {
+    margin-right: 1rem;
+    font-family: 'Plus Jakarta Sans';
+    font-style: italic;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 16.5%;
+    color: #252525;
+}
+#content .content > aside > article > ul > li::after {
+    content: '';
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #F37E0A;
+}
+/* content respnsive */
+@media (max-width: 599px) {
+    #content .content > article {
+        width: 40%;
+    }
+    #content .content > aside {
+        width: 60%;
+    }
+}
+@media (max-width: 500px) {
+    #content .content > aside {
+        flex-direction: column;
+    }
+    #content .content > aside > article {
+        width: 100%;
+    }
+}
+@media (max-width: 390px) {
+    #content .content > article h2, #hire-talent > article > h2 {
+        font-size: 1.7rem;
+    }
+}
+
+/* ========================================
+||||||||||||||| Benefit ||||||||||||||||||
+========================================== */
+#benefit {
+    display: flex;
+    margin-top: 70px;
+    /* max-width: 1058px; */
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: none;
+}
+/* benefit.gambar */
+#benefit > .gambar {
+    width: 40%;
+}
+#benefit > .gambar > div {
+    width: 100%;
+    height: 90%;
+    padding-left: 0;
+    padding-right: 0;
+    background: url('../img/rapat.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0px 130px 0px 140px;
+}
+/* benefit aside */
+#benefit > aside {
+    width: 60%;
+}
+#benefit > aside h2 {
+    text-align: right;
+}
+#benefit > aside > article > ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* benefit aside article */
+
+#benefit > aside > article > ul > li > h3 {
+    align-items: center;
+    display: flex;
+}
+#benefit > aside > article > ul > li {
+    width: 38%;
+    padding: 25px 10px 25px 25px;
+    min-height: 90px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+#benefit > aside > article > ul > li:last-child {
+    width: 85%;
+}
+#benefit > aside > article > ul > li > h3 > span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 44px;
+    margin-right: 1rem;
+    background:  #0437A5;
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+#benefit > aside > article > ul > li > h3 > span > img {
+    width: 25px;
+}
+/* benefit responsive */
+@media (max-width:660px) {
+    #benefit h2 {
+        width: 20;
+    }
+    #benefit > .gambar {
+        width: 50%;
+    }
+    #benefit > aside {
+        width: 60%;
+    }
+    #benefit > aside > article > ul > li {
+        width: 100%;
+        margin-left: 0;
+    }
+    #benefit > aside > article > ul {
+        /* width: 100%; */
+        margin-left: 1rem;
+        padding-left: 0;
+    }
+}
+/* ========================================
+|||||||| hire talent on demand |||||||||||
+========================================== */
+#hire-talent {
+    display: flex;
+    margin-top: 70px;
+    /* max-width: 1058px; */
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: none;
+}
+#hire-talent > article {
+    width: 50%;
+}
+#hire-talent > .image {
+    width: 50%;
+    min-height: 372px;
+    background: url("../img/work.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100px 0px 0px 0px;
+}
+/* ========================================
+|||||||||||||| success story |||||||||||||||
+========================================== */
+#success-story {
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: none;
+    padding: 0;
+}
+/* success-story.article */
+#success-story > .article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#success-story > .article > article {
+    width: 48%;
+}
+#success-story > .article > article > img {
+    width: 100%;
+}
+/* success-story responsive */
+@media (max-width: 500px) {
+    #success-story > .article > article {
+        width: 98%;
+    }
+}
+/* ========================================
+|||||||||||||| quotation |||||||||||||||
+========================================== */
+#quotation {
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: none;
+    padding: 0;
+}
+/* quotation.trust */
+#quotation .trust {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#quotation .trust > span {
+    width: 19%;
+    min-width: 100px;
+    padding: 5px;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+#quotation .trust > span > img {
+    max-width: 150px;
+    width: 98%
+}
+/* quotation.benner */
+#quotation .benner {
+    width: 100%;
+    margin-top: 30px;
+    padding-bottom: 25%;
+    max-height: 427px;
+    background: url('../img/quoation.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+#quotation .button {
+    text-align: center;
+}
+#quotation .button a {
+    margin: 5px;
+    display: inline-block;
+    background: #DEDEDE;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+#quotation .button a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 97%;
+    /* or 23px */
+
+    text-align: center;
+    letter-spacing: 0.01em;
+
+    color: #252525;
+}
+/* footer */
+#footer {
+    background: #0437A5;
+    border-radius: 20px;
+    padding: 1rem;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+#footer section {
+    width: 30%;
+    padding-left: 1rem;
+    min-width:185px
+}
+#footer section h2 {
+    font-family: 'Plus Jakarta Sans';
+    font-style: italic;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+#footer section p, #footer section a {
+    font-family: 'Plus Jakarta Sans';
+    font-style: italic;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+#footer section a {
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer section a img {
+    margin-right: 0.5rem;
+}
+    </style>
+</head>
+<body>
+    <!-- message section -->
+    <section id="message" class="container">
+        <header>
+            <img src="asset/img/upscale_logo.svg" alt="" class="logo">
+            <section class="contact">
+                <img src="asset/img/wa_soft.svg" alt="">
+                <a href="https://wa.me/628879996667">+62 887-9996-667</a>
+                <img src="asset/img/Internet.svg" alt="">
+                <a href="https://www.upscale.id/">www.upscale.id</a>
+            </section>
+        </header>
+        <main>
+          <section class="pesan">
+            <p>Hello Farhan,</p>
+            <p>
+                I am Bayu Ghulam, Chier Operating Officer of <a href="https://www.upscale.id/">upscale.id</a>.
+                We would like to offer our digital talents such as proggramers, digital marketing,
+                Quality Assurance, etc. including the talent managemenet service. So may I have
+                the contact of PIC or HRD to discuss more detail about this?
+            </p>
+            <p>Thank you</p>
+            <br>
+            <p>(attachment)(link to)</p>
+            <p>Company Profile :</p>
+            <a class="button" href="https://docs.google.com/presentation/d/1cyA1c-mPwFU3wtmIDhd1nxXFvltaJbWVr56XbkjpWQE/edit?usp=sharing">
+                Download Company Profile
+            </a>
+          </section>
+        </main>
+        <footer>
+            <section class="assign">
+                <img src="asset/img/assign.svg" alt="">
+            </section>
+            <section class="logo">
+                <img src="#" alt="">
+            </section>
+            <section class="contact">
+                <span>
+                    Bayu Ghulam<br>
+                    COO PT Talenta Sinergi Group
+                </span>
+                <span>
+                    <div>
+                        <img src="asset/img/Phone.svg" alt="">
+                        <a href="https://wa.me/628879996667">+62 887-9996-667</a>
+                    </div>
+                    <div>
+                        <img src="asset/img/Internet_black.svg" alt="">
+                        <a href="https://www.upscale.id/">www.upscale.id</a>
+                    </div>
+                </span>
+            </section>
+            <section class="button-contact">
+                <a href="" class="button">Contact Us</a>
+            </section>
+        </footer>
+    </section>
+
+    <!-- content section -->
+    <section id="content" class="container">
+        <section class="broadcamp"></section>
+        <section class="content">
+            <article>
+                <h2>Digitize Your Business</h2>
+                <p>Optimize and scaling up your team and build apps and any system you wish efficiently</p>
+                <p>Start from USD 50/month.</p>
+            </article>
+            <aside>
+                <article>
+                    <ul>
+                        <li><i class="plus">+</i> Project Manager</li>
+                        <li><i class="plus">+</i>Web Developer</li>
+                        <li><i class="plus">+</i>Designer</li>
+                        <li><i class="plus">+</i>Digital Marketing</li>
+                        <li><i class="plus">+</i>Data Analyst</li>
+                    </ul>
+                </article>
+                <article>
+                    <ul>
+                        <li><i class="plus">+</i>Project Leader</li>
+                        <li><i class="plus">+</i>Mobile Developer</li>
+                        <li><i class="plus">+</i>Seo Specialist</li>
+                        <li><i class="plus">+</i>Data Science</li>
+                        <li><i class="plus">+</i>Quality Assurance</li>
+                    </ul>
+                </article>
+            </aside>
+        </section>
+    </section>
+
+    <!-- benefit section -->
+    <section id="benefit" class="container">
+        <section class="gambar">
+            <h2>Benefits (7 in 1)</h2>
+            <div><!-- image here --></div>
+        </section>
+        <aside>
+            <h2>Service Already Included</h2>
+            <article>
+                <ul>
+                    <li>
+                        <h3><span><img src="asset/img/Art Therapist.svg" alt=""></span>Work Tools</h3>
+                        <p>Jira, Notion, Slack etc.</p>
+                    </li>
+                    <li>
+                        <h3><span><img src="asset/img/Home Office.svg" alt=""></span>Office</h3>
+                        <p>Free use of upscale office.</p>
+                    </li>
+                    <li>
+                        <h3><span><img src="asset/img/Internet Connection.svg" alt=""></span>Overhead</h3>
+                        <p>Electricity, internet, wifi, water, meals, etc.</p>
+                    </li>
+                    <li>
+                        <h3><span><img src="asset/img/Human Research Program.svg" alt=""></span>HR Consultant</h3>
+                        <p>administrative such as absent, leave reports, KPI/OKR, productivity monitoring etc.</p>
+                    </li>
+                    <li>
+                        <h3><span><img src="asset/img/Laptop Settings.svg" alt=""></span>IT Consultant</h3>
+                        <p>Technical, Logic, Dev, Architectural, etc.</p>
+                    </li>
+                    <li>
+                        <h3><span><img src="asset/img/Mailbox Price.svg" alt=""></span>Tax & Legal</h3>
+                        <p>Employment taxation, benefit & Compensation, Insurance, Allowance, Contract, NDA etc.</p>
+                    </li>
+                    <li>
+                        <h3><span><img src="asset/img/Name.svg" alt=""></span>Talent</h3>
+                        <p>Curated, end to end recruitment process, employment legals, cultures, rules, benefits and compensation</p>
+                    </li>
+                </ul>
+            </article>
+        </aside>
+    </section>
+
+    <!-- hire talent on demand -->
+    <section id="hire-talent" class="container">
+        <article>
+            <h2>Hire Talent On-Demand.</h2>
+            <p>Hire software developers, designers, product manager, finance, atau administratif team dari eksklusif network kami. Talent kami bisa bekerja secara remote maupun on-site.Kontrak full-time maupun freelance yang disesuaikan dengan kebutuhan bisnis Anda.</p>
+        </article>
+        <section class="image"><!-- image here --></section>
+    </section>
+
+    <!-- success story -->
+    <section id="success-story" class="container">
+        <section class="title">
+            <h2>Success Story</h2>
+            <p>We use most convenient ways on our and compactible with every enterprise scale</p>
+        </section>
+        <section class="article">
+            <article>
+                <img src="asset/img/success1.png" alt="">
+                <div>
+                    <h3>Cakap, Dedicated Office & Team</h3>
+                    <p>Sejak tahun 2015 s/d 2020 membantu Cakap mendapatkan belasan programer & mengelola development office di jogja.</p>
+                </div>
+            </article>
+            <article>
+                <img src="asset/img/success2.png" alt="">
+                <div>
+                    <h3>Krafthaus, Corporate Management</h3>
+                    <p>Sejak tahun 2012 telah dipercaya oleh perusahaan Australia sebagai Managing Director untuk mengelola cabang di Indonesia</p>
+                </div>
+            </article>
+        </section>
+    </section>
+
+    <!-- quotation -->
+    <section id="quotation" class="container">
+        <section class="trust">
+            <span>
+                <img src="asset/img/logo_cakap.svg" alt="">
+            </span>
+            <span>
+                <img src="asset/img/sociabuzz-logo.svg" alt="">
+            </span>
+            <span>
+                <img src="asset/img/ASTRA_international.svg" alt="">
+            </span>
+            <span>
+                <img src="asset/img/dataon_logo.svg" alt="">
+            </span>
+            <span>
+                <img src="asset/img/suit_media.svg" alt="">
+            </span>
+            <span>
+                <img src="asset/img/oglogo.png" alt="">
+            </span>
+            <span>
+                <img src="asset/img/tokopedia.svg" alt="">
+            </span>
+            <span>
+                <img src="asset/img/mitracomm.svg" alt="">
+            </span>
+            <span>
+                <img src="asset/img/sera.svg" alt="">
+            </span>
+            <span>
+                <img src="asset/img/nurosoft.svg" alt="">
+            </span>
+        </section>
+        <section class="benner"><!--image--></section>
+        <section class="text">
+            <h2>Want to get a quotation?</h2>
+            <p>Get talents from our exlusive networks to help scalling up your business. The part is trully fot businesses which want to innovate quickly and precisely. Especially when have proper roadmap project and precise strategies.</p>
+        </section>
+        <section class="button">
+            <a href="">Contact Us</a>
+            <a href="">Look on our company profile</a>
+        </section>
+    </section>
+    <!-- footer -->
+    <footer id="footer" class="container">
+        <section>
+            <h2>About Us</h2>
+            <p>PT Talenta Sinergi Group</p>
+        </section>
+        <section>
+            <h2>Contact Info</h2>
+            <a href="https://wa.me/628879996667"><img src="asset/img/wa_soft.svg" alt="">bayu@upscale.id</a>
+            <a href="https://www.upscale.id/"><img src="asset/img/Internet.svg" alt="">+6288 7999 6667</a>
+        </section>
+        <section>
+            <h2>Useful Links</h2>
+            <p>Home</p>
+            <p>For Business</p>
+            <p>FAQ</p>
+        </section>
+    </footer>
+</body>
+</html>
